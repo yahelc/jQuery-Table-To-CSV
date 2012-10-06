@@ -16,6 +16,6 @@ jQuery.fn.tableToCSV = function() {
             csv_str += createCSVRow(cells) + "\n";
         });
     });
-    window.location = "data:text/csv;charset=utf=8;base64," + window.btoa(unescape(encodeURIComponent(csv_str)));
+    window.location = "data:application/csv;charset=utf=8;base64," + window.btoa(unescape(encodeURIComponent(csv_str)));
 	return this;
 };
